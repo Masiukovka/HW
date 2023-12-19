@@ -1,7 +1,5 @@
 # # 2. Напишите декоратор, замеряет время выполнения функции и кол-во памяти, которое занимает ответ.
-# #import datetime
 # import time
-#
 #
 # def timer_func(pokupki):
 #     def wrapped(*args, **kwargs):
@@ -99,16 +97,16 @@
 # print(pos_ne_kr_3(spisok_chisel))
 
 
-# 3. Напишите декоратор, который будет корректировать результат функции,
-# а именно помещать их в словарь. {"status": "success", "result": ...}
+3. Напишите декоратор, который будет корректировать результат функции,
+а именно помещать их в словарь. {"status": "success", "result": ...}
 
-# def timer_func(pokupki):
-#     def wrapped(*args, **kwargs):
-#         start_time = time.perf_counter()
-#         pokupki(*args, **kwargs)
-#         end_time = time.perf_counter()
-#         print(f"Время выполнения функции заняло {end_time - start_time:0.6f} сек.")
-#     return wrapped
+def timer_func(pokupki):
+    def wrapped(*args, **kwargs):
+        start_time = time.perf_counter()
+        pokupki(*args, **kwargs)
+        end_time = time.perf_counter()
+        print(f"Время выполнения функции заняло {end_time - start_time:0.6f} сек.")
+    return wrapped
 
 
 def korrekt_korzin(pokupki):

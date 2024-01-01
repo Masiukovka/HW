@@ -156,4 +156,4 @@ print(parol(length))
 #
 # search_contact(contacts, search)
 # print(contacts)
-# решены все задачи
+# All HW

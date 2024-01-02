@@ -4,14 +4,15 @@ def summ(x):
     return summ_2
 
 summs = []
-for x in range(1, 4):
+for x in range(1, 5):
     summs.append(summ(x))
 
-s_1, s_2, s_3 = summs
+s_1, s_2, s_3, s_4 = summs
 
 print(s_1(10))
 print(s_2(10))
 print(s_3(10))
+print(s_4(10))
 
 def say():
     slovo = "Привет"

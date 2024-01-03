@@ -62,21 +62,21 @@
 # и 97-122 (буквы латинского алфавита в нижнем регистре).
 # Сгенерируйте и выведите на экран три пароля.
 
-import random
-import string
-
-
-def parol(*args):
-    lower = string.ascii_lowercase
-    upper = string.ascii_uppercase
-    num = string.digits
-    all_symbol = random.sample(lower + upper + num, length)
-    password = "".join(all_symbol)
-    return password
-
-length = int(input("Введите количество символов в диапазоне от 8 до 16: "))
-
-print(parol(length))
+# import random
+# import string
+#
+#
+# def parol(*args):
+#     lower = string.ascii_lowercase
+#     upper = string.ascii_uppercase
+#     num = string.digits
+#     all_symbol = random.sample(lower + upper + num, length)
+#     password = "".join(all_symbol)
+#     return password
+#
+# length = int(input("Введите количество символов в диапазоне от 8 до 16: "))
+#
+# print(parol(length))
 
 
 
@@ -156,7 +156,4 @@ print(parol(length))
 #
 # search_contact(contacts, search)
 # print(contacts)
-
-
-
 #Исправил

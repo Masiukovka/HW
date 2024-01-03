@@ -40,21 +40,25 @@
 # target = 4
 # print(two_sum(numbers, target))
 
-https://www.codewars.com/kata/5714eb80e1bf814e53000c06/python
-import operator
-import functools
-
-
-def fish_hex(name):
-    out = [t for t in name if t.lower() in "abcdef"]
-    if len(out) == 0:
-        return 0
-    else:
-        numbers = [int((t), 16) for t in out]
-    # result = reduce(lambda x, y: map(xor, x, y), numbers)
-    # fish is 15
-    return functools.reduce(operator.xor, numbers)
-
-name = 'E uXxZI zjXDlMgBs'
-
-print(fish_hex(name))
+# https://www.codewars.com/kata/5714eb80e1bf814e53000c06/python
+# import operator
+# import functools
+#
+#
+# def fish_hex(name):
+#     out = [t for t in name if t.lower() in "abcdef"]
+#     if len(out) == 0:
+#         return 0
+#     else:
+#         numbers = [int((t), 16) for t in out]
+#     # result = reduce(lambda x, y: map(xor, x, y), numbers)
+#     # fish is 15
+#     return functools.reduce(operator.xor, numbers)
+#
+# name = 'E uXxZI zjXDlMgBs'
+#
+# print(fish_hex(name))
+s = "String"
+t = [i * 2 for i in s]
+t1 = "".join(t)
+print(t1)

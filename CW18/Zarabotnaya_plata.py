@@ -17,7 +17,7 @@ class Zarplatnaya_vedomost:
             print(f"Начисление для сотрудника с табельным № {employee.id} "
                   f"Подразделение {employee.otdel} "
                   f"ФИО {employee.full_name}")
-            print(f"Начисленная сумма {employee.svodnaya_vedomost}")
+            print(f"Начисленная сумма {employee.svodnaya_vedomost()}")
             print("#" * len(nazvanie_tabl))
 
 

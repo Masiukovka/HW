@@ -23,3 +23,4 @@ class PodryadEmployeeAnnotation(NamedTuple):
 
     def svodnaya_vedomost_Annotation(self):
         """Returns the amount specified in the contract"""
+        

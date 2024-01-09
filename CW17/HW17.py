@@ -67,6 +67,7 @@ import string
 
 
 def parol(*args):
+    length = random.randint(8, 15)
     lower = string.ascii_lowercase
     upper = string.ascii_uppercase
     num = string.digits
@@ -74,9 +75,9 @@ def parol(*args):
     password = "".join(all_symbol)
     return password
 
-length = int(input("Введите количество символов в диапазоне от 8 до 16: "))
+# length = int(input("Введите количество символов в диапазоне от 8 до 16: "))
 
-print(parol(length))
+print(parol())
 
 
 
@@ -156,8 +157,4 @@ print(parol(length))
 #
 # search_contact(contacts, search)
 # print(contacts)
-
-
-
-
-# home
+#Исправил

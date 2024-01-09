@@ -8,6 +8,7 @@
 # -  Иерархия должна быть логичной и не противоречить принципам ООП.
 # Обработка ЗП - т.к. пригодится
 
+"""Programm"""
 class Zarplatnaya_vedomost:
     def svodnaya_vedomost(self, employees):
         nazvanie_tabl = "Сводная ведомость начисленной заработной платы"

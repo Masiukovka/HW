@@ -1,5 +1,7 @@
 import Zarabotnaya_plata
 
+"""APP for pay"""
+
 monthEmployee = Zarabotnaya_plata.MonthEmployee(121, "Конструктор",
                                                 "Костя Иванов", 1200, 0.4)
 hourEmployee = Zarabotnaya_plata.HourEmployee(323, "Слесарь",

@@ -8,10 +8,10 @@
 # а количество рядов вычисляется, исходя из общего количества снежинок.
 
 class Snow:
-    all_snow = 25
+    all_snow = 5
     object_snow = "*"
 
-    def __init__(self, operant_snow, n, str_snow):
+    def __init__(self, operant_snow, n):
         self.operant_snow = operant_snow
         self.n = n
 
@@ -43,9 +43,9 @@ class Snow:
 
 
 snezhok_um = Snow.makeSnow("*", 3)
-snezhok_delenie = Snow.makeSnow("/", 2)
-snezhok_slozhenie = Snow.makeSnow("+", 2)
-snezhok_vychital = Snow.makeSnow("-", 5)
+snezhok_delenie = Snow.makeSnow("/", 1)
+snezhok_slozhenie = Snow.makeSnow("+", 3)
+snezhok_vychital = Snow.makeSnow("-", 1)
 
 
 print(snezhok_um)

@@ -43,8 +43,8 @@ class Snow:
     def __str__(self):
         return Snow.out_str
 
-    # def __repr__(self):
-    #     return Snow.out_str
+    def __repr__(self):
+        return Snow.out_str
 
 
 

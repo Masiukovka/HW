@@ -29,7 +29,6 @@ class Snow:
         return round(Snow.all_snow - n)
 
     def makeSnow(operant_snow, n):
-        str_snow = ""
         if operant_snow == "*":
             str_snow = Snow.umnozhenie(n) * Snow.object_snow
         elif operant_snow == "/":
@@ -38,7 +37,14 @@ class Snow:
             str_snow = Snow.slozhenie(n) * Snow.object_snow
         elif operant_snow == "-":
             str_snow = Snow.vychitanie(n) * Snow.object_snow
-        return "\\n".join(str_snow[0:n] for t in range(0, len(str_snow), n))
+        out_snow = "\\n".join(str_snow[0:n] for t in range(0, len(str_snow), n))
+        return out_snow
+
+    # def __str__(self):
+    #     return Snow.out_str
+
+    def __repr__(self):
+        return Snow.out_str
 
 
 

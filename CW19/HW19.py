@@ -11,7 +11,7 @@ class Snow:
     all_snow = 5
     object_snow = "*"
 
-    def __init__(self, operant_snow, n):
+    def __init__(self, operant_snow, n): # исключил переменную
         self.operant_snow = operant_snow
         self.n = n
 

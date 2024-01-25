@@ -40,11 +40,11 @@ class Snow:
         out_snow = "\\n".join(str_snow[0:n] for t in range(0, len(str_snow), n))
         return out_snow
 
-    # def __str__(self):
-    #     return Snow.out_str
-
-    def __repr__(self):
+    def __str__(self):
         return Snow.out_str
+
+    # def __repr__(self):
+    #     return Snow.out_str
 
 
 

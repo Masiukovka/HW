@@ -22,10 +22,10 @@ class Heroes:
         self.teams = teams
         self.level = level
 
-
     def level_up(self, level): # Тут надо подумать
         self.level += 1
         return level
+
 
 class Solders:
 
@@ -33,12 +33,12 @@ class Solders:
         self.id_ = id_
         self.teams = teams
 
-
     def go_from_heroes(self, hero):
         self.hero = hero
         return f"Солдат с номером {Solders.number} следует за героем {Heroes.number}"
 
-heroes_red = Heroes(id_=1, teams="red", level=0)
+
+heroes_red = Heroes(id_=1, teams="red", level=0) # можно рандомно записать в номер id
 heroes_blue = Heroes(id_=2, teams="blue", level=0)
 
 solders_red = []
@@ -64,8 +64,8 @@ else:
 print(solders_red)
 print(solders_blue)
 
+print(heroes_red.teams)
+print(heroes_blue.teams)
+
 print(heroes_red.level)
 print(heroes_blue.level)
-
-print(heroes_red.id_)
-print(heroes_blue.id_)

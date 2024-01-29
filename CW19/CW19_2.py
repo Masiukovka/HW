@@ -23,13 +23,13 @@ class Heroes:
         self.level = level
 
 
-    def level_up(self, level):
+    def level_up(self, level): # Тут надо подумать
         self.level += 1
         return level
 
 class Solders:
 
-    def __init__(self, id_, teams):
+    def __init__(self, id_, teams): #Сначала делал через наследование, но отказался, хотя так красиво
         self.id_ = id_
         self.teams = teams
 
@@ -53,14 +53,14 @@ while n < (randint(1, 7)):
         solders_blue.append(solder.id_)
     n += 1
 
-if len(solders_red) > len(solders_blue):
+if len(solders_red) > len(solders_blue): #Если успею додумаю повышение уровня а не обнуление
     heroes_red.level_up(level=1)
     print(solders_red[0])
 else:
     heroes_blue.level_up(level=1)
     print(solders_blue[0])
 
-
+# Часть принтов можно почикать)))
 print(solders_red)
 print(solders_blue)
 

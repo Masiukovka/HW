@@ -55,11 +55,11 @@ while n < (randint(5, 10)):
 
 if len(solders_red) > len(solders_blue): #Если успею додумаю повышение уровня а не обнуление
     heroes_red.level_up(level=1)
-    print(Solders.go_from_heroes(solder=solders_red[0], hero=heroes_red.teams))
+    print(Solders.go_from_heroes(solder=solders_red[0], hero=heroes_red.id_)) # можно вывести цвет команда
 #    print(solders_red[0])
 else:
     heroes_blue.level_up(level=1)
-    print(Solders.go_from_heroes(solder=solders_blue[0], hero=heroes_blue.teams))
+    print(Solders.go_from_heroes(solder=solders_blue[0], hero=heroes_blue.id_))
 #    print(solders_blue[0])
 
 # Часть принтов можно почикать)))

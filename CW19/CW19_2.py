@@ -33,9 +33,8 @@ class Solders:
         self.id_ = id_
         self.teams = teams
 
-    def go_from_heroes(self, hero):
-        self.hero = hero
-        return f"Солдат с номером {Solders.number} следует за героем {Heroes.number}"
+    def go_from_heroes(solder, hero):
+        return f"Солдат с номером {solder} следует за героем {hero}"
 
 
 heroes_red = Heroes(id_=1, teams="red", level=0) # можно рандомно записать в номер id
@@ -43,10 +42,11 @@ heroes_blue = Heroes(id_=2, teams="blue", level=0)
 
 solders_red = []
 solders_blue = []
-n = 0
+n = 1
 
-while n < (randint(1, 7)):
-    solder = Solders(id_=(randint(0, 1000)), teams=choice(["red", "blue"]))
+while n < (randint(5, 10)):
+    solder = Solders(id_=n, teams=choice(["red", "blue"]))
+#         solder = Solders(id_=(randint(0, 1000)), teams=choice(["red", "blue"]))
     if solder.teams == "red":
         solders_red.append(solder.id_)
     else:
@@ -55,10 +55,12 @@ while n < (randint(1, 7)):
 
 if len(solders_red) > len(solders_blue): #Если успею додумаю повышение уровня а не обнуление
     heroes_red.level_up(level=1)
-    print(solders_red[0])
+    print(Solders.go_from_heroes(solder=solders_red[0], hero=heroes_red.teams))
+#    print(solders_red[0])
 else:
     heroes_blue.level_up(level=1)
-    print(solders_blue[0])
+    print(Solders.go_from_heroes(solder=solders_blue[0], hero=heroes_blue.teams))
+#    print(solders_blue[0])
 
 # Часть принтов можно почикать)))
 print(solders_red)
